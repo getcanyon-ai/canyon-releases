@@ -13,10 +13,19 @@ macOS and Linux, on amd64 and arm64. The script checks the archive against the r
 `SHA256SUMS` before it installs anything. On Windows, download the `.zip` from the release page and
 check it against `SHA256SUMS` yourself.
 
-## Images and the Helm chart
+## Run Canyon
 
-Each release's `images.txt` names Canyon's seven images (`ghcr.io/boyand/canyon-*`) by digest, and
-`canyon-<chart version>.tgz` is the Helm chart for that release.
+Each release carries what you install Canyon with; none of it needs Canyon's source:
+
+- `canyon-deploy.tar.gz`: a `canyon/` directory with the laptop demo
+  (`docker compose --profile demo-apps up` inside it) and `deploy/k8s`, the Kubernetes install base.
+- `canyon-chart.tgz`: the Helm chart, an all-in demo on one node.
+- `images.txt`: Canyon's images (`ghcr.io/boyand/canyon-*`), each by digest.
+
+```sh
+curl -fsSL https://github.com/boyand/canyon-releases/releases/latest/download/canyon-deploy.tar.gz | tar -xz && cd canyon
+docker compose --profile demo-apps up
+```
 
 ## Documentation
 
