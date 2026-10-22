@@ -33,6 +33,9 @@ https://docs.getcanyon.ai
 
 ## Licence
 
-Canyon is licensed under the Canyon Design Partner Evaluation License, included as `LICENSE` in every
-archive and in the chart. It allows use within the design partner evaluation program only, and no
-redistribution.
+Canyon is licensed under the Canyon Design Partner License, included as `LICENSE` in every archive and
+in the chart. It is granted by PlatCo GmbH to the organisations PlatCo has invited to its design partner
+program: they may run Canyon on their own systems for their internal business, including production, and
+extend it through its documented interfaces. It doesn't allow redistribution, offering Canyon to others as
+a service, or building a competing product. Third-party components carry their own licences, listed in
+`NOTICE` and `THIRD_PARTY_NOTICES`.
