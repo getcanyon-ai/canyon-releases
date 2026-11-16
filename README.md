@@ -1,7 +1,8 @@
 # Canyon releases
 
-Downloads for Canyon's design partners: the `canyon` CLI, the Helm chart and the list of Canyon's
-container images, one GitHub release per version. Canyon's source code is not published here.
+Canyon's releases: the `canyon` CLI, the Helm chart and the list of Canyon's container images, one
+GitHub release per version. Canyon's source code is at
+[getcanyon-ai/canyon](https://github.com/getcanyon-ai/canyon).
 
 ## Install the CLI
 
@@ -29,13 +30,13 @@ docker compose --profile demo-apps up
 
 ## Documentation
 
-https://docs.getcanyon.ai
+https://www.getcanyon.ai/docs/
 
 ## Licence
 
-Canyon is licensed under the Canyon Design Partner License, included as `LICENSE` in every archive and
-in the chart. It is granted by PlatCo GmbH to the organisations PlatCo has invited to its design partner
-program: they may run Canyon on their own systems for their internal business, including production, and
-extend it through its documented interfaces. It doesn't allow redistribution, offering Canyon to others as
-a service, or building a competing product. Third-party components carry their own licences, listed in
-`NOTICE` and `THIRD_PARTY_NOTICES`.
+Canyon is open source under the GNU Affero General Public License v3.0 (AGPL-3.0-only). The `canyon`
+CLI with its agent skill, and the contracts in `contracts/`, are under the Apache License 2.0, and the
+Canyon Enterprise code in `ee/` is under the Elastic License 2.0. The source repository's
+[LICENSE](https://github.com/getcanyon-ai/canyon/blob/main/LICENSE) says which part is under which
+licence, and every archive and the chart carry it as `LICENSE`. Third-party components carry their own
+licences, listed in `NOTICE` and `THIRD_PARTY_NOTICES`.
